@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-primary hover:bg-primary/90 text-white font-medium rounded-lg transition-all duration-300 shadow-md hover:shadow-lg;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-heading font-bold mb-6 text-dark dark:text-light;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+body {
+  @apply bg-gradient-to-br from-light to-light/80 dark:from-dark dark:to-dark/90 min-h-screen text-dark dark:text-light;
+  background-attachment: fixed;
+}
